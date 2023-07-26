@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+body,html {
+    overflow-x: hidden;
+    width: 100%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* #33649E
+#25477A BLUES
+#F0BB00 gold
+#0C0054 indigo */
+
+
+header{
+    width: 100%;
+    background-color: #0C0054;
+}
+nav{
+    width: 1300px;
+    margin: 0 auto;
+    padding-block: 20px;
+}
+.logo{
+    width: 100%;
+}
+.logo img{
+    width: 250px;
+}
+
+.landing{
+    width: 1300px;
+    margin: 8em auto 4em auto;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+.landing-text, .landing-image, .landing-image img{
+    width: 100%;
+}
+.landing-text h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.landing-text p{
+    font-size: 1.3rem;
+    margin-top: 1em;
+}
+.landing-text span{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 2em;
+    display: inline-block;
+}
+.landing-span{
+    width: fit-content;
+    position: relative;
+    margin-bottom: 2em;
+}
+.landing-span svg{
+    position: absolute;
+    margin-top: 1em;
+    top: 50%;
+    left: 50%;
+    fill: #F0BB00;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    overflow: visible;
+}
+.primarybutton{
+    margin-top: 3em;
+}
+.primarybutton a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 12px 60px;
+    transition: all .15s;
+}
+.primarybutton a:hover{
+    background-color: #0C0054;
+    color: #fff;
+}
+.landing-image{
+    position: relative;
+    padding-block: 0.5em;
+}
+.landing-image::before{
+    background-image: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 25%);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 50%;
+    width: 100%;
+}
+.landing-image::after{
+    background: linear-gradient(360deg, #fff 0%, rgba(255, 255, 255, 0) 25%) transparent;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+}
+
+
+.pain-points{
+    width: 1300px;
+    margin: 6em auto 2em auto;
+}
+.pp-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+.pp-dio{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.pp-span{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.pp-dio p{
+    font-size: 1.1rem;
+}
+.pp-dio i{
+    font-size: 2rem;
+    color: #33649E;
+}
+
+
+@media (max-width: 1350px) and (min-width: 1040px){
+    nav{
+        width: 90%;
+    }
+    .landing{
+        width: 90%;
+        align-items: center;
+    }
+    .pain-points{
+        width: 90%;
+    }
+    .pp-flex{
+        gap: 4em;
+        justify-content: center;
+    }
+    .pp-dio{
+        padding: 0;
+    }
+    .pp-dio p{
+        font-size: 1rem;
+    }
+    .pp-dio i{
+        font-size: 1.2rem;
+    }
+    .pp-span{
+        font-size: 1.2rem;
+    }
+
+}
+@media (max-width: 1040px) and (min-width: 880px){
+    nav{
+        width: 90%;
+    }
+    .landing{
+        width: 90%;
+        margin: 1em auto;
+        align-items: center;
+        flex-direction: column;
+    }
+    .pain-points{
+        width: 90%;
+    }
+    .pp-flex{
+        gap: 4em;
+        justify-content: center;
+    }
+    .pp-dio{
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 880px){
+    nav{
+        width: 90%;
+    }
+    .landing{
+        width: 90%;
+        margin: 0em auto;
+        align-items: center;
+        flex-direction: column;
+    }
+    .landing-text h1{
+        font-size: 2.6rem;
+    }
+    .landing-text p{
+        font-size: 1.2rem;
+    }
+    .pain-points{
+        width: 90%;
+        margin: 1em auto;
+    }
+    .pp-dio{
+        padding: 0;
+    }
+    .pp-dio p{
+        font-size: 1rem;
+    }
+    .pp-dio i{
+        font-size: 1.2rem;
+    }
+    .pp-span{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 470px){
+    .pp-flex{
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    .pp-dio i{
+        font-size: 1.4rem;
+    }
+    .pp-span{
+        font-size: 1.4rem;
+    }
+    .pp-dio p{
+        font-size: 1.1rem;
+    }
+}
