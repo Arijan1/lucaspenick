@@ -198,6 +198,9 @@ nav{
     }
 }
 @media only screen and (max-width: 880px){
+    .logo img{
+        width: 150px;
+    }
     nav{
         width: 90%;
     }
@@ -231,6 +234,7 @@ nav{
     }
 }
 @media only screen and (max-width: 470px){
+ 
     .pp-flex{
         justify-content: center;
         align-items: start;
