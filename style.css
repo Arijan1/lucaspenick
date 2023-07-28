@@ -300,16 +300,20 @@ nav{
 }
 @media only screen and (max-width: 880px){
     .logo img{
-        width: 150px;
+        width: 100px;
     }
     nav{
         width: 90%;
+        padding-block: 10px;
     }
     .landing{
         width: 90%;
         margin: 0em auto;
         align-items: center;
         flex-direction: column;
+    }
+    .landing-text span{
+        margin-top: 1em;
     }
     .landing-text h1{
         font-size: 2.6rem;
