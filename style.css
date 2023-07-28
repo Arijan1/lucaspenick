@@ -84,10 +84,17 @@ nav{
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
+    background-color: #fff;
     border: 3px solid #000;
     border-radius: 5px;
     padding: 12px 60px;
     transition: all .15s;
+}
+.alligned{
+    text-align: center;
+}
+.alligned a{
+    border: none;
 }
 .primarybutton a:hover{
     background-color: #0C0054;
@@ -146,6 +153,69 @@ nav{
     color: #33649E;
 }
 
+.under-landing{
+    width: 100%;
+    padding-block: 7em;
+    margin: 8em auto 2em auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/library-bg.jpg);
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    background-size: cover;
+    
+}
+.under-landing-container{
+    width: 1300px;
+    margin: 0 auto;
+}
+.under-landing h2{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+.under-landing .big{
+    font-size: 3.4rem;
+    display: block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.benefits{
+    width: 1300px;
+    margin: 4em auto;
+}
+.benefits-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em;
+    width: 100%;
+}
+.benefits-dio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.benefits-dio img{
+    width: 70px;
+}
+.benefits-dio h3{
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+.text-bg{
+    transition: all 0.1s;
+}
+.benefits-dio p{
+    font-size: 1.2rem;
+    margin-top: 1em;
+}
+.benefits-dio:hover .text-bg{
+    background: linear-gradient(180deg, #FFF 40%, #F0BB00 40%);
+}
+
 
 @media (max-width: 1350px) and (min-width: 1040px){
     nav{
@@ -175,6 +245,13 @@ nav{
         font-size: 1.2rem;
     }
 
+    .under-landing-container{
+        width: 90%;
+    }
+    .benefits{
+        width: 90%;
+    }
+
 }
 @media (max-width: 1040px) and (min-width: 880px){
     nav{
@@ -195,6 +272,30 @@ nav{
     }
     .pp-dio{
         padding: 0;
+    }
+    .under-landing{
+        margin: 2em auto;
+    }
+    .under-landing-container{
+        width: 90%;
+    }
+    .under-landing h2{
+        font-size: 1.6rem;
+    }
+    .under-landing .big{
+        font-size: 2.4rem;
+    }
+    .benefits{
+        width: 90%;
+    }
+    .benefits-dio h3{
+        font-size: 1.2rem;
+    }
+    .benefits-dio p{
+        font-size: 1rem;
+    }
+    .benefits-dio img{
+        width: 50px;
     }
 }
 @media only screen and (max-width: 880px){
@@ -232,6 +333,28 @@ nav{
     .pp-span{
         font-size: 1.2rem;
     }
+    .under-landing{
+        margin: 2em auto;
+        padding-block: 3em;
+    }
+    .under-landing-container{
+        width: 90%;
+    }
+    .under-landing h2{
+        font-size: 1.4rem;
+    }
+    .under-landing .big{
+        font-size: 2rem;
+    }
+    .benefits{
+        width: 90%;
+    }
+    .benefits-grid{
+        grid-template-columns: 1fr;
+    }
+    .text-bg{
+        background: linear-gradient(180deg, #FFF 40%, #F0BB00 40%);
+    }
 }
 @media only screen and (max-width: 470px){
  
@@ -248,5 +371,20 @@ nav{
     }
     .pp-dio p{
         font-size: 1.1rem;
+    }
+    .under-landing h2{
+        font-size: 1.1rem;
+    }
+    .under-landing .big{
+        font-size: 1.6rem;
+    }
+    .benefits-dio h3{
+        font-size: 1.2rem;
+    }
+    .benefits-dio p{
+        font-size: 1rem;
+    }
+    .benefits-dio img{
+        width: 50px;
     }
 }
