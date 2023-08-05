@@ -66,7 +66,7 @@
           </div>
         </div>
         <div class="landing-image">
-          <img src="image/lucas-penick.png" alt="Lucas Penick Selfie" />
+          <img src="image/lucas-penick.webp" alt="Lucas Penick Selfie" />
         </div>
       </section>
 
@@ -479,18 +479,39 @@
 
 
 
+      <!-- <section class="banner">
+        <h2>Ready to Pull the Trigger?</h2>
+      </section> -->
+
+      <section class="newsletter">
+          <div class="newsletter-heading">
+        <h2>Newsletter</h2>
+      </div>
+        <div class="newsletter-form">
+          <form>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email Address">
+            <input type="submit" value="Subscribe Now">
+            
+          </form>
+        </div>
+      </section>
+
 
 
     </main>
 
     <script>
-
 const swiper = new Swiper('.swiper', {
+  
   // Optional parameters
   loop: true,
   slidesPerView: 1,
   spaceBetween: 40,
   centeredSlides: true,
+  autoplay: {
+        delay: 2500,
+        },
  
   // If we need pagination
   pagination: {
@@ -521,6 +542,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 swiper.slideNext();
+
 
       </script>
   </body>

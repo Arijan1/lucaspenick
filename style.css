@@ -170,7 +170,7 @@ nav{
     width: 100%;
     padding-block: 7em;
     margin: 8em auto 2em auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/library-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/library-bg.webp);
     background-attachment: fixed;
     background-position: 100% 100%;
     background-size: cover;
@@ -364,6 +364,19 @@ nav{
     --swiper-navigation-color: #0C0054;
     --swiper-navigation-sides-offset: 0px;
   }
+  .swiper-button-prev::after, .swiper-button-next::after{
+    content: '' !important;
+    background-image: url(image/custom-arrow.webp);
+    background-position: 100% 50%;
+
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .swiper-button-prev::after{
+    rotate: 180deg;
+  }
 
   .swiper-pagination-bullet-active{
     --swiper-pagination-color: #0C0054;
@@ -379,7 +392,7 @@ nav{
 
 
   .bg-2{
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/library-bg2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/library-bg2.webp);
     background-attachment: fixed;
     background-position: 100% 85%;
     background-size: cover;
@@ -472,43 +485,43 @@ nav{
     font-weight: 800;
 }
 #span-one{
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(image/blackboard-writing-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(image/blackboard-writing-bg.webp);
     background-size: cover;
 }
 .process-dio-container:hover #span-one{
-    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(image/blackboard-writing-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(image/blackboard-writing-bg.webp);
     background-size: cover;
     transform: scale(1.15);
 }
 #span-two{
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(image/lightbulb.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(image/lightbulb.webp);
     background-size: cover;
     background-position: 100% 100%;
 }
 .process-dio-container:hover #span-two{
-    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(image/lightbulb.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(image/lightbulb.webp);
     background-size: cover;
     background-position: 100% 50%;
     transform: scale(1.15);
 }
 #span-three{
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(image/classof2020.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(image/classof2020.webp);
     background-size: cover;
     background-position: 100% 50%;
 }
 .process-dio-container:hover #span-three{
-    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(image/classof2020.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(image/classof2020.webp);
     background-size: cover;
     background-position: 100% 50%;
     transform: scale(1.15);
 }
 #span-four{
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(image/handonbooks.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(image/handonbooks.webp);
     background-size: cover;
     background-position: 100% 50%;
 }
 .process-dio-container:hover #span-four{
-    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(image/handonbooks.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(image/handonbooks.webp);
     background-size: cover;
     background-position: 100% 50%;
     transform: scale(1.15);
@@ -530,6 +543,106 @@ nav{
 }
 .right-aligned p{
     margin-left: auto;
+}
+
+
+.banner{
+    width: fit-content;
+    margin: 8em auto;
+    padding: 30px 70px;
+    border-radius: 100px;
+    box-shadow: 5.37px 5.37px 0 0 #071317;
+    border: 3px solid #071317;
+    rotate: -3deg;
+    
+}
+.banner h2{
+    font-size: 2rem;
+    
+}
+
+
+.newsletter{
+    width: 100%;
+    display: flex;
+    margin-block: 10em;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.newsletter-heading{
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/university-hats-bg.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0%;
+    z-index: 2;
+    width: 50%;
+    height: 200px;
+    position: relative;
+    color: #Fff;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    align-items: center;
+}
+.newsletter-form{
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image/university-hats-bg.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+.newsletter-form form{
+    display: flex;
+    gap: 1em;
+    width: 100%;
+}
+.newsletter-form input[type=text], .newsletter-form input[type=email]{
+    padding: 15px 20px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.newsletter-form input[type=submit]{
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 12px 60px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.newsletter-form input[type=submit]:hover{
+    background-color: #F0BB00;
+}
+.newsletter-heading::after{
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    transform: skew(-30deg);
+    width: 20px;
+    height: 200px;
+    right: 0px;
+}
+.newsletter-form::before{
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    transform: skew(-30deg);
+    width: 30px;
+    height: 200px;
+    left: -10px;
+    z-index: 3;
 }
 
 
@@ -574,9 +687,30 @@ nav{
     .testimonial-dio{
         font-size: 1rem;
     }
+    .swiper-button-prev::after, .swiper-button-next::after{
+        background-position: 100% 50%;
+        
+      }
 
     .process{
         width: 90%;
+    }
+    .newsletter-form{
+        padding-left: 50px;
+    }
+    .newsletter-heading{
+        padding-right: 50px;
+    }
+    .newsletter h2{
+        font-size: 2rem;
+    }
+    .newsletter-form input[type=text], .newsletter-form input[type=email]{
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    .newsletter-form input[type=submit]{
+        font-size: 1rem;
+        padding: 6px 30px;
     }
 
 }
@@ -630,11 +764,37 @@ nav{
     .testimonial-dio{
         font-size: 1rem;
     }
+    .swiper-button-prev::after, .swiper-button-next::after{
+        background-position: 100% 50%;
+        
+      }
     .process{
         width: 90%;
     }
     .process-dio-text p{
         font-size: 1.1rem;
+    }
+    .newsletter-form{
+        padding-left: 50px;
+    }
+    .newsletter-heading{
+        padding-right: 50px;
+    }
+    .newsletter h2{
+        font-size: 2rem;
+    }
+    .newsletter-form input[type=text], .newsletter-form input[type=email]{
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    .newsletter-form input[type=submit]{
+        font-size: 1rem;
+        padding: 6px 30px;
+    }
+    .newsletter-form form{
+        flex-direction: column;
+        width: 80%;
+        margin-inline: auto;
     }
 }
 @media only screen and (max-width: 880px){
@@ -712,9 +872,7 @@ nav{
     .swiper-slide{
         justify-content: flex-start;
     }
-    .swiper-button-prev, .swiper-button-next{
-        --swiper-navigation-size: 30px;
-      }
+
 
 
       .process{
@@ -731,6 +889,43 @@ nav{
     }
     .process-dio-text p{
         width: 100%;
+    }
+
+    .newsletter{
+        flex-direction: column;
+        margin-block: 4em;
+    }
+    .newsletter-form{
+        padding-left: 0;
+        height: auto;
+        padding-block: 20px;
+    }
+    .newsletter-heading{
+        padding-right: 0;
+        width: 100%;
+        height: auto;
+        padding-block: 40px 20px;
+        justify-content: center;
+    }
+    .newsletter-heading::after{
+        width: 0px;
+    }
+    .newsletter-form::before{
+        width: 0;
+    }
+    .newsletter h2{
+        font-size: 2rem;
+    }
+    .newsletter-form input[type=text], .newsletter-form input[type=email]{
+        font-size: 1.1rem;
+    }
+    .newsletter-form input[type=submit]{
+        font-size: 1.1rem;
+    }
+    .newsletter-form form{
+        flex-direction: column;
+        width: 80%;
+        margin-inline: auto;
     }
 }
 @media only screen and (max-width: 470px){
