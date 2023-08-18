@@ -553,7 +553,7 @@ nav{
     border-radius: 100px;
     box-shadow: 5.37px 5.37px 0 0 #071317;
     border: 3px solid #071317;
-    rotate: -3deg;
+    rotate: -2deg;
     
 }
 .banner h2{
@@ -644,6 +644,71 @@ nav{
     left: -10px;
     z-index: 3;
 }
+
+
+/*BOOK A CALL */
+
+.calendly{
+    width: 1400px;
+    margin: 8em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+  }
+  .calendly-link{
+    width: 100%;
+    box-shadow: 0px 10px 39px 0px rgb(0 0 0 / 13%);
+  }
+  .calendly-text{
+    width: 100%;
+  }
+  .calendly-text img{
+    width: 150px;
+    border: 3px solid #0C0054;
+    border-radius: 50%;
+    margin-bottom: 1em;
+  }
+
+  .calendly-text h3{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+  }
+  .calendly-text h4{
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
+  .calendly-text p{
+    font-size: 1.2rem;
+    margin-block: 1em;
+  }
+  .calendly-text ul{
+    display: flex;
+    margin-top: 1em;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    list-style-type: none;
+    list-style-position: outside;
+  }
+  .calendly-text ul li{
+    font-size: 1.2rem;
+  
+  }
+  .ul-li-calendly{
+    display: flex;
+    align-items: center;
+  }
+  .calendly-text ul i{
+    font-weight: 700;
+    margin-right: 0.5em;
+    display: inline;
+    font-size: 1.4rem;
+    color: #33649E;
+  }
+  
+  
 
 
 

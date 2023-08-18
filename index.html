@@ -62,7 +62,7 @@
             Let me guide you to achieve your academic goals with confidence.
           </p>
           <div class="primarybutton">
-            <a href="#">Book a Call</a>
+            <a href="#call">Book a Call</a>
           </div>
         </div>
         <div class="landing-image">
@@ -107,7 +107,7 @@
             <span class="big">You're In The Right Place</span>
           </h2>
           <div class="primarybutton alligned">
-            <a href="#">Book a Call</a>
+            <a href="#call">Book a Call</a>
           </div>
         </div>
       </section>
@@ -377,7 +377,7 @@
   </div>
       
   <div class="primarybutton alligned white-bg-button mg-top">
-    <a href="#">Book a Call</a>
+    <a href="#call">Book a Call</a>
   </div>
       </section>
 
@@ -393,7 +393,7 @@
             <span class="big">I'm the elite option for you</span>
           </h2>
           <div class="primarybutton alligned">
-            <a href="#">Book a Call</a>
+            <a href="#call">Book a Call</a>
           </div>
         </div>
       </section>
@@ -479,11 +479,11 @@
 
 
 
-      <!-- <section class="banner">
+     <section class="banner">
         <h2>Ready to Pull the Trigger?</h2>
-      </section> -->
+      </section> 
 
-      <section class="newsletter">
+      <!-- <section class="newsletter">
           <div class="newsletter-heading">
         <h2>Newsletter</h2>
       </div>
@@ -495,8 +495,43 @@
             
           </form>
         </div>
-      </section>
+      </section> -->
 
+      <section class="calendly" id="call">
+        <div class="calendly-link">
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/arijan-janes/discovery" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+        </div>
+        <div class="calendly-text">
+          <img src="image/lucas-penick-photo.webp" alt="Lucas Penick Image" loading="lazy">
+          <div class="testimonials-heading">
+            <h3>Book a 30-Minute Call</h3>
+            <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 500 150"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M5,125.4c30.5-3.8,137.9-7.6,177.3-7.6c117.2,0,252.2,4.7,312.7,7.6"
+                  ></path>
+                  <path
+                    d="M26.9,143.8c55.1-6.1,126-6.3,162.2-6.1c46.5,0.2,203.9,3.2,268.9,6.4"
+                  ></path>
+                </svg>
+                </div>
+          <p>By the end of this call, you'll have a clear path forward and we'll begin to map out a strategic plan based on your goals, ambitions, strengths and weaknesses.</p>
+  
+          <h4>This Call Is Perfect For:</h4>
+          <ul>
+            <div class="ul-li-calendly"><i class="fa-solid fa-circle-check"></i><li>Students in need of <span class="bold700"> additional assistance</span> with their education goals.</li></div>
+            <div class="ul-li-calendly"><i class="fa-solid fa-circle-check"></i><li>Students in search of <span class="bold700">academic excellence</span>, motivated to succeed.</li></div>
+            <div class="ul-li-calendly"><i class="fa-solid fa-circle-check"></i><li>Students whose goal is to ace the entrance exams <span class="bold700"> at top-50 universities</span> .</li></div>
+            <div class="ul-li-calendly"><i class="fa-solid fa-circle-check"></i><li>Students that need someone who <span class="bold700"> understands their situation</span> and helps them.</li></div>
+          </ul>
+        </div>
+      </section>
 
 
     </main>
@@ -542,6 +577,12 @@ const swiper = new Swiper('.swiper', {
 });
 
 swiper.slideNext();
+
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
 
 
       </script>
