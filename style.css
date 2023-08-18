@@ -649,7 +649,7 @@ nav{
 /*BOOK A CALL */
 
 .calendly{
-    width: 1400px;
+    width: 1300px;
     margin: 8em auto;
     display: flex;
     justify-content: center;
@@ -707,6 +707,76 @@ nav{
     font-size: 1.4rem;
     color: #33649E;
   }
+
+  .faq {
+    width: 1300px;
+    margin: 8em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3em;
+  }
+  .faq h2{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .content {
+    width: 100%;
+
+    background-color: #071317;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .question {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+  }
+  .question::after {
+    content: "+";
+    color: #fff;
+    position: absolute;
+    transition: 0.5s;
+    right: 20px;
+  }
+  .answer {
+    padding: 3px 20px;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0, 1.05, 0, 1);
+    max-height: 0;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .answer ul {
+    margin-left: 1em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+  }
+  .answer li::before {
+    content: "\2022";
+    color: #0C0054;
+    margin-right: 0.5em;
+  }
+  
+  /* javascript styling*/
+  
+  .content.active .answer {
+    max-height: 1500px;
+    transition: max-height 0.5s cubic-bezier(1, 1.05, 0, 0);
+    padding: 20px 20px;
+  }
+  .content.active .question::after {
+    transform: rotate(135deg);
+    font-size: 1.3rem;
+  }
+  
+  
   
   
 
@@ -776,6 +846,13 @@ nav{
     .newsletter-form input[type=submit]{
         font-size: 1rem;
         padding: 6px 30px;
+    }
+
+    .calendly{
+        width: 90%;
+    }
+    .faq{
+        width: 90%;
     }
 
 }
@@ -860,6 +937,17 @@ nav{
         flex-direction: column;
         width: 80%;
         margin-inline: auto;
+    }
+
+    
+    .calendly{
+        width: 90%;
+    }
+    .calendly .testimonials-heading h3{
+        font-size: 1.8rem;
+    }
+    .faq{
+        width: 90%;
     }
 }
 @media only screen and (max-width: 880px){
@@ -992,6 +1080,63 @@ nav{
         width: 80%;
         margin-inline: auto;
     }
+
+
+    .calendly{
+        width: 90%;
+        flex-direction: column-reverse;
+        margin: 4em auto;
+        gap: 2em;
+      }
+      .calendly-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .calendly-text h2{
+        font-size: 2rem;
+      }
+      .calendly-text h3{
+        font-size: 1.3rem;
+        text-align: center;
+      }
+      .calendly-text p{
+        font-size: 1rem;
+      }
+      .calendly-text ul li{
+        font-size: 1rem;
+      }
+      .calendly-link{
+        box-shadow: none;
+      }
+
+
+      .faq{
+        width: 90%;
+        margin: 2em auto 4em auto;
+      }
+      .faq h2{
+        font-size: 1.5rem;
+      }
+      .question{
+        font-size: 1rem;
+      }
+      .answer{
+        font-size: 0.8rem;
+      }
+
+
+      .banner{
+        padding: 15px 40px;
+        margin: 2em auto;
+        width: 90%;
+        text-align: center;
+      }
+      .banner h2{
+        font-size: 1.3rem;
+      }
+     
 }
 @media only screen and (max-width: 470px){
  
