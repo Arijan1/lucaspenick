@@ -26,13 +26,13 @@ header{
 nav{
     width: 1300px;
     margin: 0 auto;
-    padding-block: 20px;
+    padding-block: 10px;
 }
 .logo{
     width: 100%;
 }
 .logo img{
-    width: 250px;
+    width: 200px;
 }
 
 .landing{
@@ -951,9 +951,6 @@ nav{
     }
 }
 @media only screen and (max-width: 880px){
-    .logo img{
-        width: 100px;
-    }
     nav{
         width: 90%;
         padding-block: 10px;
@@ -1024,6 +1021,10 @@ nav{
     }
     .swiper-slide{
         justify-content: flex-start;
+    }
+
+    .mg-top{
+        margin-top: 2em;
     }
 
 
