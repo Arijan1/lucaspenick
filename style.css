@@ -775,7 +775,38 @@ nav{
     transform: rotate(135deg);
     font-size: 1.3rem;
   }
+
+
+  .about{
+    width: 1300px;
+    margin: 4em auto;
+  }
+  .about h2{
+    font-size: 2.2rem;
+  }
+  .about-flex{
+    display: flex;
+    gap: 2em;
+    margin-top: 4em;
+    justify-content: center;
+  }
+  .about-image{
+    width: 100%;
+  }
+  .about-image img{
+    width: 100%;
+  }
+  .about-text{
+    width: 100%;
+  }
+  .about-text p{
+    font-size: 1.2rem;
+    margin-block: 1em;
+  }
   
+  .bolded{
+    font-weight: 700;
+  }
   
   
   
@@ -853,6 +884,14 @@ nav{
     }
     .faq{
         width: 90%;
+    }
+
+
+    .about{
+        width: 90%;
+    }
+    .about-flex{
+        align-items: center;
     }
 
 }
@@ -948,6 +987,12 @@ nav{
     }
     .faq{
         width: 90%;
+    }
+    .about{
+        width: 90%;
+    }
+    .about-flex{
+        flex-direction: column;
     }
 }
 @media only screen and (max-width: 880px){
@@ -1137,6 +1182,14 @@ nav{
       .banner h2{
         font-size: 1.3rem;
       }
+
+
+      .about{
+        width: 90%;
+    }
+    .about-flex{
+        flex-direction: column;
+    }
      
 }
 @media only screen and (max-width: 470px){
@@ -1188,5 +1241,12 @@ nav{
 
       .process-dio-text p{
         font-size: 1rem;
+      }
+
+      .about-text p{
+        font-size: 1rem;
+      }
+      .about-flex{
+        margin-top: 1em;
       }
 }
